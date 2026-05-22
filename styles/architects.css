@@ -134,6 +134,49 @@ main > section {
   font-weight:500;
 }
 
+/* feature section related styles */
+
+.features {
+  gap: 140px;
+}
+
+#feature-section-title {
+  border-left: 5px solid #FF900E;
+  padding-left: 20px;
+}
+
+.feature-card {
+  padding: 30px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.feature-card .feature-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#expo-badge {
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+
+#expo-year {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.featured-architect img {
+  width: 100%;
+  
+}
+
 /* Some fact related styles */
 
 .facts-container{
@@ -189,6 +232,7 @@ main > section {
 @media screen and (max-width: 576px) {
   .navbar , 
   .nav-links,
+  .features,
   .teams {
     flex-direction: column;
     align-items: center;
@@ -214,12 +258,17 @@ main > section {
   .our-features {
     margin-left: 20px;
   }
+
+  #expo-badge {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 }
 
 
 /* medium size device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .teams {
+  .teams, .features{
     flex-direction: column;
     align-items: center;
   }
@@ -233,4 +282,9 @@ main > section {
     gap: 50px;
     justify-items: center;
 }
+
+#expo-badge {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 }
